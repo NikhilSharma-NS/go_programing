@@ -27,18 +27,21 @@ Tree
 3.3) Leaf nodes : Nodes with no children
 3.4) Sibling : Childern of same parent
 3.5) Ancestors  : node P is an ancestor Q ,if there is a path from root to Q such that P appears in the path
+```
        root
     P
 Q      Q  
      Q    Q
+```
 3.6) Descendants : node P is an ancestor of Q
 Q is a descendant of P
 3.6) Depth : Lenth of path from root to node
+```
            25
     20            30
 18       22     28     70
      21     24
-
+```
 depth of node 22 is 2: (25->20->22)     
 3.7) Height :  Lenth of path from that node to deepest node
 height of node 22 is 2:(22->21 and 24)
