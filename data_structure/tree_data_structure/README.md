@@ -1,4 +1,4 @@
-##Part:1
+## Part:1
 
 1)Diffrence between Linear and hierarchical data structure
 2)What is a tree
@@ -50,7 +50,7 @@ a tree that has only left or only right nodes are called left skew tree and righ
 
 
 
-##Part:2
+## Part:2
 
 1) What is binary tree
 2) Types of Binary tree
@@ -61,8 +61,118 @@ a tree that has only left or only right nodes are called left skew tree and righ
 
 Binary trees are the one in which a parent node have at most 2 children . i.e, either 0,1,2 children only
 
-
+```
              1
       2              3
                   4     5
                6     7
+
+```
+
+2) Types of binary tree
+
+2.1) Strict 
+2.2) Full/perfect
+2.3) Complete
+
+2.1) Strict Binay tree
+Each node has exactly 2 child nodes or no nodes
+
+```
+   1
+2     3
+    4   5
+  6   7
+```
+
+2.2) Full/perfect Binay tree
+Each node has exactly 2 children and the leaf nodes are at same level
+
+```
+         1
+    2        3
+ 4     5   6    7
+```
+
+2.3) Complete Binay tree
+Every level except possibility last are completely filled and all the node are as far left as possible
+
+```
+           1
+      2        3
+   4     5   6    7
+8    9
+
+```
+maximum number of nodes at a level are 2nd level
+level 0 : 2^0 = 1 
+level 1 : 2^1 = 2
+level 2 : 2^2 = 4
+
+Example:
+```
+           1
+      2        3
+   4     5   6    7
+
+```
+
+Maximum number of nodes in a tree: 2^(h+1)-1 -> 2^3-1=7
+
+Maximum height of tree given n node : log2(n+1)-1 -> log2(7+1)-1=2
+
+heights
+```
+null -> height = -1
+```
+```
+1 -> height = 0
+```
+```
+ 1    -> height =1
+2 3
+``` 
+
+Balanced Binary tree
+
+difference between height of left and right subtree is not more than k ( mostly 1)
+
+leftHeight - RightHeight = 1
+
+```
+             1
+         2      3
+      4      6     7
+   8     9
+```
+
+3) Properties of Binary tree
+
+3.1) Number of nodes in a full/perfect binary tree : 2^(n+1)-1
+3.2) Number of nodes in a complete binary tree are between 2^n and 2^(n+1)-1
+3.3) Minimum height of a binary tree is log2(n+1)-1 Or Floor (log2(n+1))
+
+4) Structure of Binary tree
+
+```                     (root)
+                        data
+       left                                        right
+ (pointer to left node)                   (pointer to right node) 
+
+```
+In Go 
+
+type TreeNode struct{
+left   *TreeNode
+right  *TreeNode
+data int64
+}
+
+In Java
+
+class TreeNode{
+    int data;
+    TreeNode left;
+    TreeNode right;
+}
+
