@@ -161,18 +161,18 @@ leftHeight - RightHeight = 1
 
 ```
 In Go 
-
+```
 type TreeNode struct{
 left   *TreeNode
 right  *TreeNode
 data int64
 }
-
+```
 In Java
-
+```
 class TreeNode{
     int data;
     TreeNode left;
     TreeNode right;
 }
-
+```
