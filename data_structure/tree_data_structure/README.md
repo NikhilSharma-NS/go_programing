@@ -176,3 +176,37 @@ class TreeNode{
     TreeNode right;
 }
 ```
+
+## Part3
+
+
+1) Binary Search Tree
+2) Properties of Binary Search Tree
+
+
+1) Binary Search Introduction
+
+Binary search tree is the type of binary tree in which the value of left child is always less than the right child
+
+It is mainly used in Binary search technique
+
+2) Properties of Binary Search Tree
+
+2.1) The left subtree of a node only contains key less than the nodes key
+2.2) The right subtree of a node only contains key greater than the nodes key
+2.3) Both right and left subtree must also be binary search tree
+
+```
+                    10
+              5          14
+          4     8    12      17       
+```
+
+## Part 4
+
+Tree Traversal
+
+1) Inorder
+2) Preorder
+3) Postorder
+
