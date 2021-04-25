@@ -24,8 +24,8 @@ func main() {
 
 func (root *TreeNode) inOrderTraversal(result *[]int64) {
 	if root != nil {
-		root.left.inOrderTraversal(result)
 		*result = append(*result, root.value)
+		root.left.inOrderTraversal(result)
 		root.right.inOrderTraversal(result)
 	}
 }

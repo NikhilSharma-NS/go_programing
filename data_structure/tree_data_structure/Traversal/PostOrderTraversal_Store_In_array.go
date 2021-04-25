@@ -17,15 +17,15 @@ func main() {
 	root.left.right = &TreeNode{value: 5}
 	root.right.left = &TreeNode{value: 6}
 	root.right.right = &TreeNode{value: 7}
-	root.inOrderTraversal(&results)
+	root.postOrderTraversal(&results)
 	fmt.Println(results)
 
 }
 
-func (root *TreeNode) inOrderTraversal(result *[]int64) {
+func (root *TreeNode) postOrderTraversal(result *[]int64) {
 	if root != nil {
+		root.left.postOrderTraversal(result)
+		root.right.postOrderTraversal(result)
 		*result = append(*result, root.value)
-		root.left.inOrderTraversal(result)
-		root.right.inOrderTraversal(result)
 	}
 }
