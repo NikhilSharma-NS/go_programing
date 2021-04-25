@@ -210,3 +210,102 @@ Tree Traversal
 2) Preorder
 3) Postorder
 
+What is tree traversal
+
+the process of visiting all the nodes of a tree
+
+How can we visit nodes
+
+starting the root node; we can perform 3 operation
+1) Process current node ( we will call this opeartion as D)
+2) Traverse to the left child node (Lets call it;L)
+3) Traverse to the right child node (Lets call it:R)
+
+How can we visit nodes?
+
+1)LDR : ProcessLeftTree,ProcessCurrent,ProcessRightTree
+2)LRD : ProcessLeftTree,ProcessRightTree,ProcessCurrent
+3)DLR : ProcessCurrent,ProcessLeftTree,ProcessRightTree
+4)DRL : ProcessCurrent,ProcessRightTree,ProcessLeftTree
+5)RDL : ProcessRightTree,ProcessCurrent,ProcessLeftTree
+6)RLD : ProcessRightTree,ProcessLeftTree,ProcessCurrent
+
+Classification of Traversal
+
+1) Preorder (DLR) Traversal
+2) Inorder  (LDR) Traversal
+3) Postorder (LRD) Traversal
+4) Level order Traversal (inspired by BFS of Graph traversal)
+
+Example : 
+``` 
+                               1
+                    2                    3
+            4               5    6                7
+
+```
+
+Preorder Traversal
+
+DLR
+Step1) Process root 
+o/p : 1
+Step2)Process Left Tree
+2.1) 2,left,right
+o/p : 1,2
+2.2) process left(4)
+o/p : 1,2,4
+2.3) Process right (5)
+o/p : 1,2,4,5
+Step3) Process Right
+3.1) 3,left,right
+o/p : 1,2,4,5,3
+3.2) process left(6)
+o/p : 1,2,4,5,3,6
+3.3) Process right(7) 
+o/p : 1,2,4,5,3,6,7
+
+
+Inorder Traversal
+LDR
+
+Step1) Process Left
+1.1) left,root,right -> left,2,right
+1.2) 4,2,right
+o/p : 4
+1.3) 2,right
+o/p : 4,2
+1.4) right(5)
+o/p : 4,2,5
+Step2) Process root(1)
+o/p: 4,2,5,1
+Step3) Process right
+3.1) right
+3.2)left(6),root,right
+o/p: 4,2,5,1,6
+3.3)root(3),right
+o/p: 4,2,5,1,6,3
+3.4)right(7)
+o/p: 4,2,5,1,6,3,7
+
+Post Traversal
+LRD
+
+Step1) Process Left
+1.1)left(4),right,root
+o/p: 4
+1.2)right,node
+o/p: 4,5
+1.3) node
+o/p: 4,5,2
+Step2) Process Right
+2.1)left(6),right,root
+o/p:4,5,2,6
+2.2)right,root
+o/p:4,5,2,6,7
+2.3)root(3)
+o/p:4,5,2,6,7,3
+Step3) Process root(1)
+o/p:4,5,2,6,7,3,1
+
+
