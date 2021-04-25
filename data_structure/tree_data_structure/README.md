@@ -248,6 +248,7 @@ Example :
 Preorder Traversal
 
 DLR
+```
 Step1) Process root 
 o/p : 1
 Step2)Process Left Tree
@@ -264,11 +265,11 @@ o/p : 1,2,4,5,3
 o/p : 1,2,4,5,3,6
 3.3) Process right(7) 
 o/p : 1,2,4,5,3,6,7
-
+```
 
 Inorder Traversal
 LDR
-
+```
 Step1) Process Left
 1.1) left,root,right -> left,2,right
 1.2) 4,2,right
@@ -287,10 +288,11 @@ o/p: 4,2,5,1,6
 o/p: 4,2,5,1,6,3
 3.4)right(7)
 o/p: 4,2,5,1,6,3,7
+```
 
 Post Traversal
 LRD
-
+```
 Step1) Process Left
 1.1)left(4),right,root
 o/p: 4
@@ -307,5 +309,6 @@ o/p:4,5,2,6,7
 o/p:4,5,2,6,7,3
 Step3) Process root(1)
 o/p:4,5,2,6,7,3,1
+```
 
 
