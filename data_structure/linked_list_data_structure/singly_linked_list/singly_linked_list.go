@@ -49,8 +49,7 @@ func (singlyLinkedList *SinglyLinkedList) insertAtIndex(index int, value int) {
 	if index < 0 {
 		return
 	} else if index == 0 {
-		singlyLinkedList.head = node
-		singlyLinkedList.length++
+		singlyLinkedList.insertAtFront(value)
 		return
 	}
 	if singlyLinkedList.head == nil {
@@ -72,7 +71,7 @@ func (singlyLinkedList *SinglyLinkedList) getAt(position int) *Node {
 	} else if position > singlyLinkedList.size()-1 {
 		return nil
 	} else {
-		for position != 0 {
+		for counter := 0; counter < position; counter++ {
 			current = current.next
 		}
 	}
@@ -132,7 +131,7 @@ func main() {
 	singlyLinkedLis.insertAtBack(4)
 	singlyLinkedLis.insertAtBack(6)
 
-	singlyLinkedLis.insertAtIndex(1, 5)
+	singlyLinkedLis.insertAtIndex(0, 5)
 	singlyLinkedLis.traverse()
 
 }
