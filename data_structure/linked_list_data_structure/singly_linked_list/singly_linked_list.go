@@ -43,6 +43,42 @@ func (singlyLinkedList *SinglyLinkedList) insertAtFront(val int) {
 
 }
 
+func (singlyLinkedList *SinglyLinkedList) insertAtIndex(index int, value int) {
+	node := &Node{value: value}
+	var prev *Node
+	if index < 0 {
+		return
+	} else if index == 0 {
+		singlyLinkedList.head = node
+		singlyLinkedList.length++
+		return
+	}
+	if singlyLinkedList.head == nil {
+		singlyLinkedList.head = node
+	} else {
+		n := singlyLinkedList.getAt(index)
+		node.next = n
+		prev = singlyLinkedList.getAt(index - 1)
+		prev.next = node
+	}
+	singlyLinkedList.length++
+}
+
+func (singlyLinkedList *SinglyLinkedList) getAt(position int) *Node {
+	current := singlyLinkedList.head
+
+	if position < 0 {
+		return current
+	} else if position > singlyLinkedList.size()-1 {
+		return nil
+	} else {
+		for position != 0 {
+			current = current.next
+		}
+	}
+	return current
+}
+
 func (singlyLinkedList *SinglyLinkedList) deleteAtFront() error {
 
 	if singlyLinkedList.head == nil {
@@ -72,7 +108,7 @@ func (singlyLinkedList *SinglyLinkedList) deleteAtBack() error {
 	return nil
 }
 
-func (singlyLinkedList *SinglyLinkedList)size(){
+func (singlyLinkedList *SinglyLinkedList) size() int {
 	return singlyLinkedList.length
 }
 
@@ -94,6 +130,9 @@ func main() {
 	singlyLinkedLis.insertAtBack(2)
 	singlyLinkedLis.insertAtBack(3)
 	singlyLinkedLis.insertAtBack(4)
+	singlyLinkedLis.insertAtBack(6)
+
+	singlyLinkedLis.insertAtIndex(1, 5)
 	singlyLinkedLis.traverse()
 
 }
