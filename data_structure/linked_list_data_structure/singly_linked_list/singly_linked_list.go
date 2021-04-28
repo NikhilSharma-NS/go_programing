@@ -88,6 +88,26 @@ func (singlyLinkedList *SinglyLinkedList) deleteAtFront() error {
 	return nil
 }
 
+func (singlyLinkedList *SinglyLinkedList) deleteNode(input int) {
+	current := singlyLinkedList.head
+	var pre *Node
+	if current != nil && current.value == input {
+		singlyLinkedList.head = current.next
+		singlyLinkedList.length--
+		return
+	} else {
+		for current != nil && current.value != input {
+			pre = current
+			current = current.next
+		}
+	}
+	if current == nil {
+		return
+	}
+	pre.next = current.next
+	singlyLinkedList.length--
+}
+
 func (singlyLinkedList *SinglyLinkedList) deleteAtBack() error {
 	if singlyLinkedList.head == nil {
 		return fmt.Errorf("List is Empty")
@@ -132,6 +152,7 @@ func main() {
 	singlyLinkedLis.insertAtBack(6)
 
 	singlyLinkedLis.insertAtIndex(0, 5)
+	singlyLinkedLis.deleteNode(4)
 	singlyLinkedLis.traverse()
 
 }
