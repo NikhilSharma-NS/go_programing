@@ -1,0 +1,76 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var stack [5]string
+
+
+
+
+	0,1,2,3,4
+	1,2,3,4,5
+
+s2:=s[2,4]
+append(s2,6)
+
+leng 4
+cap 6
+
+
+func myvalue(int inpy)
+
+func myvalue(1)
+
+
+Struct Foo{
+func get
+
+}
+
+strct Jooconst{
+	Foo
+}
+
+
+
+}
+
+
+
+
+package main
+
+func main() value,error {
+
+
+
+         
+	print("A")
+	print("B")
+	go print("C")
+	print("D")
+}
+
+ACDB
+
+
+cap therom
+
+
+package main
+
+const N = 4
+
+func main() {
+	m := make(map[int]*int)
+
+	for i := 0; i < N; i++ {
+		m[i] = &i
+	}
+
+	for _, v := range m {
+		println(*v)
+	}
+}
