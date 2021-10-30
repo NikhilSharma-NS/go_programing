@@ -65,3 +65,37 @@ func main() {
 }
 
 ```
+
+2) 
+
+```
+for value := range ch{
+
+}
+```
+iterate over values received from a channel
+Loop automatically breaks, when a channel is closed
+range does not return the second boolean value
+
+3) UnBuffered Channel
+
+Synchrouns
+
+```
+G1      -> G2
+sender     receiver
+```
+ch:= make(chan Type)
+
+4) Buffered Channel
+
+channel are given capacity 
+in-memory FIFO queue
+Asynchronous
+
+ch:= make(chan Type,capacity)
+
+```
+G1 -> | | | -> G2
+Sender        receiver
+```
