@@ -103,3 +103,10 @@ how it is persisted and when the persisting needs to occur
 8) Go runtime creates worker OS threads 
 9) Goroutines runs in the context of OS thread
 10) Many goroutines executes in the context of single OS thread
+
+
+#### Closures
+
+- Goroutines execute within the same address space they are created in
+- They can directly modify variables in the enclosing lexical block.
+
