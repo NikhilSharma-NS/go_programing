@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func main() {
+func main1() {
 	channel := make(chan int)
 	go func(a, b int) {
 		c := a + b

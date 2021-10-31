@@ -99,3 +99,67 @@ ch:= make(chan Type,capacity)
 G1 -> | | | -> G2
 Sender        receiver
 ```
+
+#### Example 
+
+```
+package main
+
+import "fmt"
+
+func main() {
+	channel := make(chan int)
+
+	go func() {
+
+		for counter := 0; counter < 6; counter++ {
+			channel <- counter
+		}
+		close(channel)
+	}()
+
+	for value := range channel {
+		fmt.Printf("Value in main thread: %v \n", value)
+
+	}
+
+}
+
+```
+
+Buffer Channel Example 
+
+
+```
+package main
+
+import "fmt"
+
+func main() {
+	channel := make(chan int, 6)
+
+	go func() {
+		defer close(channel)
+		for counter := 1; counter <= 6; counter++ {
+			fmt.Println("Sending ", counter)
+			channel <- counter
+		}
+	}()
+
+	for v := range channel {
+		fmt.Printf("Received %v\n", v)
+
+	}
+
+}
+
+```
+
+
+#### Channel Direction
+
+- when using channels as function parameters, you can specify if a channel is meant to only send or receive values
+- this spicificity increase the type-safety of the program
+
+func pong(in <-chan string,out chan<- string){}
+
