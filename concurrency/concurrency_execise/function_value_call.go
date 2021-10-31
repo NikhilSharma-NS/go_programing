@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func main() {
+func main2() {
 
 	fv := mywork
 	go fv("mywork")

@@ -13,7 +13,7 @@ func doWork(input string) {
 	}
 }
 
-func main() {
+func main3() {
 
 	go doWork("go rountine call")
 	time.Sleep(1 * time.Millisecond)

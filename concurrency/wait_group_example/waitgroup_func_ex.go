@@ -5,7 +5,7 @@ import (
 	"sync"
 )
 
-func main() {
+func main2() {
 	var wg sync.WaitGroup
 	var value int
 	wg.Add(1)

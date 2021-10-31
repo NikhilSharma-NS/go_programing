@@ -5,7 +5,7 @@ import (
 	"sync"
 )
 
-func main() {
+func main1() {
 
 	var wg sync.WaitGroup
 	inc := func(wg *sync.WaitGroup) {

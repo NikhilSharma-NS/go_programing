@@ -5,16 +5,16 @@ import (
 	"time"
 )
 
-func doWork(input string) {
+func doWork1(input string) {
 	for counter := 0; counter < 3; counter++ {
 		fmt.Println("Counter", counter, "Input", input)
 	}
 }
 
-func main() {
+func main1() {
 
 	go func() {
-		doWork("anonnymous")
+		doWork1("anonnymous")
 	}()
 
 	time.Sleep(1 * time.Microsecond)
