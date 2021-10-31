@@ -163,3 +163,199 @@ func main() {
 
 func pong(in <-chan string,out chan<- string){}
 
+
+#### Default value - Channels
+
+- default value for channels : nil
+
+var ch chan interface{}
+
+- reading/writing to a nil channel will block forever
+
+var ch chan interface{}
+
+<-ch
+
+ch <- struc{}{}
+
+- closing nil channel will panic 
+
+var ch chan interface{}
+close(ch)
+
+- Ensure the channels are initilized first
+
+- Owner os channel is a goroutine that instantiates,writes and closes a channel
+
+- Channel utilizers only have a read-only view into the channel
+
+#### Ownership of channels avoids
+
+- Deadlocking by writing to nil channel
+- closing a nil channel
+- writing to a closed channel
+- closing a channel more than once
+
+```
+package main
+
+import "fmt"
+
+func main() {
+	// create channel owner ,which creates channel
+	// return receive only channle to caller
+	// spins a goroutine ,which
+	// writes data into channel and
+	// closes the channel when done
+
+	owner := func() <-chan int {
+		ch := make(chan int)
+		go func() {
+			defer close(ch)
+			for counter := 0; counter < 5; counter++ {
+				ch <- counter
+			}
+		}()
+		return ch
+
+	}
+	consumer := func(ch <-chan int) {
+
+		// read value of channel
+		for value := range ch {
+			fmt.Println("Received ", value)
+		}
+		fmt.Println("Done receiving ")
+	}
+
+	ch := owner()
+	consumer(ch)
+
+}
+
+```
+
+##### Deep dive in channel
+
+1) https://golang.org/src/runtime/chan.go
+
+ch:= make (chan int,3)
+
+- hchan struct is allocated in heap 
+- make() returns a pointer to it
+- Since 'ch' is pointer it can be between functions for send and receive
+
+```
+---------------
+Stack |
+---------------
+
+--------------
+Heap |
+--------------
+
+2) Send and Receive work 
+
+```
+ch:= make(chan int,3)
+
+// G1
+
+func G1(ch chan<- int){
+for _,v:= range[]int{1,2,3,4}
+ch<-v
+}
+
+// G2
+
+func G2(ch <-chan int){
+	for V:= range ch{
+		fmt.Println(v)
+	}
+}
+```
+Stage1 
+
+```
+hchan
+----------------------
+buf     circular queue    -> | | | Empty 
+----------------------
+lock    mutex
+----------------------
+sendx   send index
+----------------------
+recvx   recv index
+----------------------
+
+```
+
+Step 2 G1 is ch <-v
+
+```
+hchan
+----------------------        2 1 0
+buf     circular queue    -> | | |1| 2) enqueue 
+----------------------
+lock    mutex            1) Acquire Lock 3) release lock 
+----------------------
+sendx   send index
+----------------------
+recvx   recv index
+----------------------
+
+```
+
+Step 3 G2 V:= <-ch
+
+```
+hchan
+----------------------        2 1 0
+buf     circular queue    -> | | |1| 2) dequeue  3) copy to v
+----------------------
+lock    mutex            1) Acquire Lock 5) release lock 
+----------------------
+sendx   send index
+----------------------
+recvx   recv index       4) inc recvx by 1 
+----------------------
+
+```
+
+- There is no memory share between goroutines
+- Goroutines copy elements into and from hchan
+- hchan is protected by mutex lock
+
+3) Buffers Full
+
+```
+hchan
+----------------------        2  1  0
+buf     circular queue    -> |3 |2 | 1 |   1) enqueue 1,2,3 and 2) full 
+----------------------
+lock    mutex            
+----------------------
+sendx   send index         3) ch <- 4
+
+                                      ----------------------
+									           G -> G1
+									  -----------------------
+									          elem -> 4
+									  -----------------------
+									                          Sudog
+									  -----------------------
+----------------------
+recvx   recv index
+----------------------
+
+
+G1 calls gopark()
+
+when channel buffer is full and a goroutines tries to sed value
+a) Sender Goroutines gets blocked , it is parked in sendQ
+b) data will be saved in the elem field of the sugod structure
+c) when Receiver comes along, it dequeues the value from buffer
+d) enqueues the data from elem field to the buffer
+e) Pops the goroutines in sendq and puts it into runanble state
+
+4) 

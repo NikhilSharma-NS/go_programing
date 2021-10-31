@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main4() {
 	// create ch1 and ch2
 	// spin gorountine genMsg and replayMsg
 
