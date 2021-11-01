@@ -358,4 +358,69 @@ c) when Receiver comes along, it dequeues the value from buffer
 d) enqueues the data from elem field to the buffer
 e) Pops the goroutines in sendq and puts it into runanble state
 
-4) 
+4) Buffer is empty 
+
+G2 tries to recv on empty channel
+
+v:=<-ch
+
+```
+hchan
+----------------------        2 1 0
+buf     circular queue    -> | | | | empty channel 
+----------------------
+lock    mutex             
+----------------------
+sendx   send index
+----------------------     -----------------
+recvx   recv index    ->          G        -> G2
+                           -----------------
+						         elem       -> v
+                           -----------------
+
+                           -----------------
+----------------------
+
+```
+
+
+when gorountine calls receive on empty buffer
+
+a) Goroutine is blocked it is parked into recvq
+b) elem field of the sudog structure holds the reference to the stack
+variable of receiver goroutine
+c) when sender comes along Sender finds the goroutine in recvq
+d) sender copies the data into the stack variable on the receiver goroutine directly 
+e) Pops the goruntine in recvq and puts into runnable state
+
+5) Send and Receive on unbuffered channel
+
+5.1) Send on unbuffered channel
+
+a) when sender goroutine wants to send values
+b) if there is corresponding receiver waiting in recvq
+c) Sender will write the value directly into receiver goroutine stack variable
+d) Sender goroutine puts the receiver goroutine back to runnable state
+e) if there is no receiver goroutine in recvq
+f) Sender gets parked into sendq
+g) data is saved in elem field in sudog struct
+h) Receiver Comes and copies teh data
+i) puts the sender to runnable state again
+
+5.2) Receive on unbuffered channel
+a) Receiver goroutine wants to receive value 
+b) If it find a goroutine in waiting in sendq
+c) Receiver copies the value in elem field to its variable
+d) Puts the sender goroutine to runnable state
+e) if there was no sender goroutine in sendq
+f) Receiver gets parked into recvq
+g) Reference to variable is saved in elem field in sudog struct
+h) Sender comes and copies the data directly to receiver stack variable
+i) Puts the receiver to runnable state
+
+
+1) hchan struct represents channel
+2) it contains circular ring buffer and mutex lock
+3) Goroutines that get blocked on send or recv are parked in sendq or recvq
+4) Go scheduler moves the blocked goroutines out os OS thread
+5) once channel opeartion is complete go routine is moved back to local run queue
