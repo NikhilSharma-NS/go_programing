@@ -40,8 +40,8 @@ func main() {
 		}()
 	}
 
-	wg.Add(99)
-	for counter := 0; counter < 99; counter++ {
+	wg.Add(100)
+	for counter := 0; counter < 100; counter++ {
 		go func() {
 			defer wg.Done()
 			withdraw(1)
