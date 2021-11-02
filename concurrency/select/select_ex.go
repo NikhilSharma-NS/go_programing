@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func main() {
+func main1() {
 
 	ch1 := make(chan string)
 	ch2 := make(chan string)
@@ -22,13 +22,14 @@ func main() {
 
 	// fmt.Println("received first ", <-ch1)
 	// fmt.Println("received second", <-ch2)
+	for counter := 0; counter < 2; counter++ {
+		select {
+		case m1 := <-ch1:
+			fmt.Println("received", m1)
+		case m2 := <-ch2:
+			fmt.Println("received", m2)
 
-	select {
-	case m1 := <-ch1:
-		fmt.Println("received", m1)
-	case m2 := <-ch2:
-		fmt.Println("received", m2)
-
+		}
 	}
 
 }
