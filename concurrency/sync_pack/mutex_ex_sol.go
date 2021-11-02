@@ -20,12 +20,12 @@ func main() {
 
 	withdraw := func(amount int) {
 		mu.Lock()
+		defer mu.Unlock()
 		if balance >= amount {
 			balance -= amount
 		} else {
 			fmt.Println("insuicient balance")
 		}
-		mu.Unlock()
 	}
 
 	// make 100 deposit of 1
