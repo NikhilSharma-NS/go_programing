@@ -6,7 +6,7 @@ import (
 	"sync"
 )
 
-func main() {
+func main2() {
 	runtime.GOMAXPROCS(4)
 	var balance int
 	var wg sync.WaitGroup
