@@ -18,5 +18,8 @@ srp.go
 ```
 ### Open-Closed Principle 
 
-
+```
+ocp.go
+```
+### Liskov Substitution Principle
 
