@@ -11,12 +11,14 @@
    2.5) how is the main.go file organized
 
 2.1) 
+```
 go build -> compile the file
 go run -> compile and execute
 go fmt -> format all the code in the current directory
 go install -> compile and install a package
 go get -> downloads the raw source code of someone else's package
 go test -> run the any tests associated with current project
+```
 
 2.2) 
 Package == Project == workspace
