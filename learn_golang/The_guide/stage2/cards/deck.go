@@ -32,7 +32,7 @@ func (d deck) print() {
 	}
 }
 
-func (d deck) handSize(handSizei int) (start deck, end deck) {
+func handSize(handSizei int, d deck) (start deck, end deck) {
 	return d[:handSizei], d[handSizei:]
 }
 
