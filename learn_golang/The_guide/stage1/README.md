@@ -51,9 +51,10 @@ import is to use standarad and dependent package import
 2.4) what that func thing
 
 ```
-func                                     main                             ()
+func                             main                             ()
 
-tells go we're                        set the name of func            list of argument to pass the function 
+tells go we're                  set the name of func            list of argument 
+                                                               to pass the function 
 about to declare a func
 
 {
@@ -70,4 +71,3 @@ func main(){
              -> declare functions , tell Go to do things
 }
 ```
-

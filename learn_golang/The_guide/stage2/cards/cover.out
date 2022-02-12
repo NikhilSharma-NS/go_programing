@@ -1,0 +1,19 @@
+mode: set
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/deck.go:15.21,21.35 4 1
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/deck.go:26.2,26.14 1 1
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/deck.go:21.35,22.36 1 1
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/deck.go:22.36,24.4 1 1
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/deck.go:29.23,30.26 1 1
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/deck.go:30.26,32.3 1 1
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/deck.go:35.62,37.2 1 0
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/deck.go:39.33,43.2 1 1
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/deck.go:45.51,47.2 1 1
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/deck.go:49.41,51.16 2 1
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/deck.go:54.2,54.12 1 0
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/deck.go:51.16,53.3 1 1
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/deck.go:57.25,58.26 1 0
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/deck.go:58.26,61.3 2 0
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/deck.go:64.35,65.26 1 0
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/deck.go:65.26,70.3 4 0
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/main.go:5.13,38.2 7 0
+Go_repo/go_programing/learn_golang/The_guide/stage2/cards/main.go:40.23,42.2 1 0
