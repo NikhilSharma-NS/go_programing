@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-
-	"example2"
+	//"../example2"
 )
 
 type AlterCounter int
@@ -20,9 +19,9 @@ func main() {
 
 	fmt.Println(c)
 
-	user := example2.User{}
+	//user := example2.User{}
 
-	fmt.Println(user)
+	//fmt.Println(user)
 
 }
 
