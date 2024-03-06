@@ -9,7 +9,7 @@ import (
 
 func init() {
 
-	g := runtime.GOMAXPROCS(1)
+	g := runtime.GOMAXPROCS(10)
 	fmt.Println(g)
 }
 
@@ -41,7 +41,7 @@ func lowercase() {
 		for r := 'a'; r <= 'z'; r++ {
 			fmt.Printf("%c\t", r)
 		}
-		fmt.Println()
+
 	}
 }
 func uppercase() {
@@ -49,6 +49,6 @@ func uppercase() {
 		for r := 'A'; r <= 'Z'; r++ {
 			fmt.Printf("%c\t", r)
 		}
-		fmt.Println()
+
 	}
 }
