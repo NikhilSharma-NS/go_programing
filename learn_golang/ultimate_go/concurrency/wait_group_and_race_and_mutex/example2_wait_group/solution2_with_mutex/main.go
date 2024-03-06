@@ -19,6 +19,7 @@ func main() {
 		go func() {
 			for j := 0; j < 2; j++ {
 				mutx.Lock()
+
 				counter = counter + 1
 				mutx.Unlock()
 			}
