@@ -8,7 +8,7 @@
 package main
 
 import (
-	"Gorepo/go_programing/learn_golang/ultimate_go/Unit_Test_Case/example_internal_web_end_point/handlers"
+	"Gorepo/go_programing/learn_golang/ultimate_go/Testing/example_internal_web_end_point/handlers"
 	"log"
 	"net/http"
 	// Import handler package that has a set of routes that we are gonna work with.
