@@ -2,8 +2,10 @@ package main
 
 import (
 	"Gorepo/go_programing/leet_code/container_with_most_water"
+	firstuniquecharacterinastring "Gorepo/go_programing/leet_code/first_unique_character_in_a_string"
 	"Gorepo/go_programing/leet_code/longest_palindromic_substring"
 	"Gorepo/go_programing/leet_code/longest_substring_without_repeating_characters"
+	"Gorepo/go_programing/leet_code/merge_sorted_array"
 	"Gorepo/go_programing/leet_code/palindrome_number"
 	"fmt"
 )
@@ -20,5 +22,9 @@ func main() {
 	fmt.Println(longest_substring_without_repeating_characters.Longest_substring_without_repeating_characters("abcabcbb"))
 
 	fmt.Println(longest_substring_without_repeating_characters.Longest_substring_without_repeating_characters("bbbbbbb"))
+
+	fmt.Println(firstuniquecharacterinastring.FirstUniqChar("aabbc"))
+
+	fmt.Println(merge_sorted_array.Merge_sorted_array([]int{1, 2, 3}, 3, []int{2, 5, 6}, 3))
 
 }
