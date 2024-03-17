@@ -1,4 +1,4 @@
-package non_recursive
+package find_a_number
 
 func Non_recursive_Find_A_Num(list []int, num int) bool {
 
