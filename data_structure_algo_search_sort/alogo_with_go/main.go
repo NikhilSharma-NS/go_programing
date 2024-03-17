@@ -1,8 +1,10 @@
 package main
 
 import (
+	"Gorepo/go_programing/data_structure_algo_search_sort/alogo_with_go/any_base_to_decimal"
 	"Gorepo/go_programing/data_structure_algo_search_sort/alogo_with_go/convert_decimal_to_any_base"
 	"Gorepo/go_programing/data_structure_algo_search_sort/alogo_with_go/find_a_number"
+	"Gorepo/go_programing/data_structure_algo_search_sort/alogo_with_go/find_two_num_in_list_sum"
 	"Gorepo/go_programing/data_structure_algo_search_sort/alogo_with_go/fizz_buzz"
 	"Gorepo/go_programing/data_structure_algo_search_sort/alogo_with_go/reverse_a_string"
 	"Gorepo/go_programing/data_structure_algo_search_sort/alogo_with_go/sum_of_number"
@@ -36,5 +38,14 @@ func main() {
 	fmt.Println("Base: 16", convert_decimal_to_any_base.ConvertDecimalToBase(2044, 16))
 	fmt.Println("Base: 16", convert_decimal_to_any_base.ConvertDecimalToBase_Constant(2044, 16))
 	fmt.Println("Base: 16", convert_decimal_to_any_base.ConvertDecimalToBase_Constant_with_String_Builder(2044, 16))
+
+	fmt.Println("Base: 10", any_base_to_decimal.BasetoDecimal("11111111100", 2))
+	fmt.Println("Base: 10", any_base_to_decimal.BasetoDecimal("7FC", 16))
+
+	index1_worst, index2_worst := find_two_num_in_list_sum.Find_two_num_in_list_sum_worst([]int{1, 2, 3, 4}, 7)
+	fmt.Printf("Index1: [%d], Index2: [%d]", index1_worst, index2_worst)
+	fmt.Println()
+	index1, index2 := find_two_num_in_list_sum.Find_two_num_in_list_sum([]int{1, 2, 3, 4}, 7)
+	fmt.Printf("Index1: [%d], Index2: [%d]", index1, index2)
 
 }
