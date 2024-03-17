@@ -1,9 +1,9 @@
 package main
 
 import (
-	"Gorepo/go_programing/data_structure/alogo_with_go/find_a_number"
-	"Gorepo/go_programing/data_structure/alogo_with_go/reverse_a_string"
-	"Gorepo/go_programing/data_structure/alogo_with_go/sum_of_number"
+	"Gorepo/go_programing/data_structure_algo_search_sort/alogo_with_go/find_a_number"
+	"Gorepo/go_programing/data_structure_algo_search_sort/alogo_with_go/reverse_a_string"
+	"Gorepo/go_programing/data_structure_algo_search_sort/alogo_with_go/sum_of_number"
 	"fmt"
 )
 
