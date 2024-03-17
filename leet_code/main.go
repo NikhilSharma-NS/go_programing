@@ -7,6 +7,7 @@ import (
 	"Gorepo/go_programing/leet_code/longest_substring_without_repeating_characters"
 	"Gorepo/go_programing/leet_code/merge_sorted_array"
 	"Gorepo/go_programing/leet_code/palindrome_number"
+	"Gorepo/go_programing/leet_code/remove_duplicates_from_sorted_array"
 	"Gorepo/go_programing/leet_code/remove_element"
 	"fmt"
 )
@@ -35,5 +36,7 @@ func main() {
 	fmt.Println(remove_element.RemoveElementWithRange([]int{3, 2, 2, 3}, 3))
 	fmt.Println(remove_element.RemoveElementWithRange([]int{0, 1, 2, 2, 3, 0, 4, 2}, 2))
 	fmt.Println(remove_element.RemoveElementWithRange_ReturnSlice([]int{0, 1, 2, 2, 3, 0, 4, 2}, 2))
+
+	fmt.Println(remove_duplicates_from_sorted_array.RemoveDuplicates_WithRange([]int{1, 1, 2}))
 
 }
