@@ -1,4 +1,4 @@
-package firstuniquecharacterinastring
+package first_unique_character_in_a_string
 
 func FirstUniqChar(s string) int {
 	// This is a constant space allocation (ie: always 26)
