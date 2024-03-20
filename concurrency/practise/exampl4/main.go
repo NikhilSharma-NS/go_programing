@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	ch := make(chan int, 3)
+
+	ch <- 2
+	ch <- 3
+
+	fmt.Println(<-ch)
+	fmt.Println(<-ch)
+	close(ch)
+	i, b := <-ch
+	fmt.Println(i, b)
+
+}
