@@ -2,6 +2,7 @@ package main
 
 import (
 	"Gorepo/go_programing/leet_code/best_time_to_buy_and_sell_stock"
+	"Gorepo/go_programing/leet_code/check_if_array_is_sorted_and_rotated"
 	"Gorepo/go_programing/leet_code/container_with_most_water"
 	"Gorepo/go_programing/leet_code/contains_duplicate"
 	"Gorepo/go_programing/leet_code/first_unique_character_in_a_string"
@@ -55,5 +56,9 @@ func main() {
 	fmt.Println("Input: 123", reverse_integer.ReverseInteger(123))
 	fmt.Println("Input: -123", reverse_integer.ReverseInteger(-123))
 	fmt.Println("Input: 1534236469", reverse_integer.ReverseInteger(1534236469))
+
+	fmt.Println("Input:[3,4,5,1,2]", check_if_array_is_sorted_and_rotated.Check_if_array_is_sorted_and_rotated([]int{3, 4, 5, 1, 2}))
+	fmt.Println("Input:[2,1,3,4]", check_if_array_is_sorted_and_rotated.Check_if_array_is_sorted_and_rotated([]int{2, 1, 3, 4}))
+	fmt.Println("Input:[1,2,3]", check_if_array_is_sorted_and_rotated.Check_if_array_is_sorted_and_rotated([]int{1, 2, 3}))
 
 }
