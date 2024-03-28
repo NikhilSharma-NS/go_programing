@@ -26,3 +26,21 @@ func Palindrome_number(num int) bool {
 
 	return true
 }
+
+func Palindrome_number1(num int) bool {
+	value := num
+	if num < 0 {
+		return false
+	}
+	rev := 0
+	for num != 0 {
+		mod := num % 10
+		rev = mod + rev*10
+		num = num / 10
+	}
+	if rev == value {
+		return true
+	} else {
+		return false
+	}
+}

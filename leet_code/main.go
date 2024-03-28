@@ -11,6 +11,8 @@ import (
 	"Gorepo/go_programing/leet_code/palindrome_number"
 	"Gorepo/go_programing/leet_code/remove_duplicates_from_sorted_array"
 	"Gorepo/go_programing/leet_code/remove_element"
+	"Gorepo/go_programing/leet_code/reverse_integer"
+	"Gorepo/go_programing/leet_code/threesum"
 	"fmt"
 )
 
@@ -47,5 +49,11 @@ func main() {
 	fmt.Println(best_time_to_buy_and_sell_stock.MaxProfit([]int{7, 6, 4, 3, 1}))
 
 	fmt.Println(best_time_to_buy_and_sell_stock.MaxProfit([]int{1, 2}))
+
+	fmt.Println(threesum.ThreeSum([]int{-1, 0, 1, 2, -1, -4}))
+
+	fmt.Println("Input: 123", reverse_integer.ReverseInteger(123))
+	fmt.Println("Input: -123", reverse_integer.ReverseInteger(-123))
+	fmt.Println("Input: 1534236469", reverse_integer.ReverseInteger(1534236469))
 
 }
