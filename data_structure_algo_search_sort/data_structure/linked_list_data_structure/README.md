@@ -24,3 +24,6 @@ for adding a new node at the end of linked list we have to traverse through the 
 we can say head is the start of list . head is a pointer that points to the first node of list and
 End is the end of the list (End is a pointer of he node that has NULL value)
 
+
+
+
