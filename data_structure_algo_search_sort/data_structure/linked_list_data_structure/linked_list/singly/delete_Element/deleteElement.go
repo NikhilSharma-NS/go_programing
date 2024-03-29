@@ -42,6 +42,31 @@ func (head *Node[T]) deleteElementAtKth(k int) *Node[T] {
 
 }
 
+func (head *Node[T]) deleteElement(k T) *Node[T] {
+	temp := head
+	var pre *Node[T]
+
+	// to handle empty
+	if temp == nil {
+		return nil
+	}
+	// to handle head
+	if k == head.data {
+		head = head.next
+		return head
+	}
+	// to handle kth
+	for temp != nil {
+		if temp.data == k {
+			pre.next = pre.next.next
+		}
+		pre = temp
+		temp = temp.next
+	}
+	return head
+
+}
+
 func (s *SNode[T]) deleteElementAtKth(k int) {
 
 	temp := s.head
@@ -58,6 +83,28 @@ func (s *SNode[T]) deleteElementAtKth(k int) {
 	for temp != nil {
 		count++
 		if count == k {
+			pre.next = pre.next.next
+		}
+		pre = temp
+		temp = temp.next
+	}
+
+}
+
+func (s *SNode[T]) deleteElement(k T) {
+
+	temp := s.head
+
+	if temp == nil {
+		return
+	} else if k == temp.data {
+		s.head = s.head.next
+		return
+	}
+
+	pre := &Node[T]{}
+	for temp != nil {
+		if k == temp.data {
 			pre.next = pre.next.next
 		}
 		pre = temp
@@ -116,7 +163,7 @@ func (head *Node[T]) displayNodeData() {
 }
 func main() {
 
-	n := &Node[int]{data: 1, next: &Node[int]{data: 2, next: &Node[int]{data: 3, next: &Node[int]{data: 4, next: &Node[int]{data: 5}}}}}
+	n := &Node[int]{data: 1, next: &Node[int]{data: 2, next: &Node[int]{data: 3, next: &Node[int]{data: 4, next: &Node[int]{data: 5, next: &Node[int]{data: 6, next: &Node[int]{data: 7}}}}}}}
 
 	//n.deleteElement(2)
 	n.displayNodeData()
@@ -138,9 +185,14 @@ func main() {
 	fmt.Println("Deleting At kth(2) End")
 	n = n.deleteElementAtKth(2)
 	n.displayNodeData()
-
 	fmt.Println("----------------------------")
-	n1 := &Node[int]{data: 1, next: &Node[int]{data: 2, next: &Node[int]{data: 3, next: &Node[int]{data: 4, next: &Node[int]{data: 5}}}}}
+	n.displayNodeData()
+	n = n.deleteElement(5)
+	fmt.Println("Deleting value ")
+	n.displayNodeData()
+
+	fmt.Println("***************************")
+	n1 := &Node[int]{data: 1, next: &Node[int]{data: 2, next: &Node[int]{data: 3, next: &Node[int]{data: 4, next: &Node[int]{data: 5, next: &Node[int]{data: 6, next: &Node[int]{data: 7}}}}}}}
 	s := SNode[int]{head: n1}
 	fmt.Println("----------------------------")
 	s.head.displayNodeData()
