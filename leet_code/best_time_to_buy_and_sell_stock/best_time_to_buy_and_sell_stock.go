@@ -1,26 +1,20 @@
 package best_time_to_buy_and_sell_stock
 
-import "fmt"
-
 func MaxProfit(prices []int) int {
 	max := 0
-	index := 0
-	start := 1
 
-	for i := 0; i < len(prices) && start < len(prices); i++ {
-		value := prices[start] - prices[i]
-		if value > 0 && value > max {
-			index = start
-			max = value
+	for buy, sell := 0, 1; sell < len(prices); {
+		if prices[buy] < prices[sell] {
+			profit := prices[sell] - prices[buy]
+			if profit > max {
+				max = profit
+			}
+		} else {
+			buy = sell
 		}
-		start++
+		sell = sell + 1
 
 	}
-	if max == 0 {
-		fmt.Println("prices:max", max)
-		return 0
-	}
 
-	fmt.Println("prices", "", max)
-	return prices[index]
+	return max
 }
