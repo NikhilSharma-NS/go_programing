@@ -5,6 +5,8 @@ import (
 	"Gorepo/go_programing/leet_code/check_if_array_is_sorted_and_rotated"
 	"Gorepo/go_programing/leet_code/container_with_most_water"
 	"Gorepo/go_programing/leet_code/contains_duplicate"
+	"Gorepo/go_programing/leet_code/delete_node_in_a_linked_list"
+	"Gorepo/go_programing/leet_code/delete_the_middle_node_of_a_linked_list"
 	"Gorepo/go_programing/leet_code/first_unique_character_in_a_string"
 	"Gorepo/go_programing/leet_code/longest_palindromic_substring"
 	"Gorepo/go_programing/leet_code/longest_substring_without_repeating_characters"
@@ -65,4 +67,20 @@ func main() {
 	head := &remove_linked_list_elements.ListNode{Val: 1, Next: &remove_linked_list_elements.ListNode{Val: 2}}
 	fmt.Println(remove_linked_list_elements.RemoveElements(head, 1))
 
+	node1 := &delete_node_in_a_linked_list.ListNode{Val: 4, Next: &delete_node_in_a_linked_list.ListNode{Val: 5, Next: &delete_node_in_a_linked_list.ListNode{Val: 1, Next: &delete_node_in_a_linked_list.ListNode{Val: 9}}}}
+	fmt.Println("Before Deletion:")
+	delete_node_in_a_linked_list.PrintData(node1)
+	delete_node_in_a_linked_list.DeleteNode(node1.Next)
+	fmt.Println()
+	fmt.Println("After Deletion:")
+	delete_node_in_a_linked_list.PrintData(node1)
+	fmt.Println()
+
+	node2 := &delete_the_middle_node_of_a_linked_list.ListNode{Val: 1, Next: &delete_the_middle_node_of_a_linked_list.ListNode{Val: 3, Next: &delete_the_middle_node_of_a_linked_list.ListNode{Val: 4}}}
+	fmt.Println("Before Deletion of mid:")
+	delete_the_middle_node_of_a_linked_list.PrintData(node2)
+	delete_the_middle_node_of_a_linked_list.DeleteMiddle(node2)
+	fmt.Println()
+	fmt.Println("After Deletion of mid:")
+	delete_the_middle_node_of_a_linked_list.PrintData(node2)
 }
