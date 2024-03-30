@@ -16,6 +16,7 @@ import (
 	"Gorepo/go_programing/leet_code/remove_element"
 	"Gorepo/go_programing/leet_code/remove_linked_list_elements"
 	"Gorepo/go_programing/leet_code/reverse_integer"
+	"Gorepo/go_programing/leet_code/rotate_list"
 	"Gorepo/go_programing/leet_code/threesum"
 	"fmt"
 )
@@ -83,4 +84,10 @@ func main() {
 	fmt.Println()
 	fmt.Println("After Deletion of mid:")
 	delete_the_middle_node_of_a_linked_list.PrintData(node2)
+	fmt.Println()
+	fmt.Println("Before Rotaion of [1,2,3,4,5]: by 2")
+	node3 := &rotate_list.ListNode{Val: 1, Next: &rotate_list.ListNode{Val: 2, Next: &rotate_list.ListNode{Val: 3, Next: &rotate_list.ListNode{Val: 4, Next: &rotate_list.ListNode{Val: 5}}}}}
+	node3 = rotate_list.RotateRight(node3, 2)
+	rotate_list.PrintData(node3)
+
 }
