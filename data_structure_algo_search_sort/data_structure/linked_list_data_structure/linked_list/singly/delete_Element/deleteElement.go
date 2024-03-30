@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type T1 interface {
 	comparable
@@ -153,6 +155,25 @@ func (s *SNode[T]) deleteHead() {
 	s.head = s.head.next
 }
 
+func (head *Node[T]) deleteElementAllCase(k T) *Node[T] {
+
+	dummy := &Node[T]{next: head}
+
+	pre, current := dummy, head
+
+	for current != nil {
+		temp := current.next
+		if current.data == k {
+			pre.next = temp
+		} else {
+			pre = current
+		}
+		current = current.next
+	}
+	return dummy.next
+
+}
+
 func (head *Node[T]) displayNodeData() {
 	temp := head
 	for temp != nil {
@@ -216,4 +237,28 @@ func main() {
 	s.deleteElementAtKth(2)
 	s.head.displayNodeData()
 
+	n5 := &Node[int]{data: 1, next: &Node[int]{data: 2, next: &Node[int]{data: 6, next: &Node[int]{data: 3, next: &Node[int]{data: 4, next: &Node[int]{data: 5, next: &Node[int]{data: 6}}}}}}}
+
+	n5.displayNodeData()
+	fmt.Println("Deleting 6 from list")
+	n5 = n5.deleteElementAllCase(6)
+	n5.displayNodeData()
+	fmt.Println("----------------------------")
+	n6 := &Node[int]{}
+	n6.displayNodeData()
+	fmt.Println("Deleting 7 from Empty List")
+	n6 = n6.deleteElementAllCase(7)
+	n6.displayNodeData()
+	fmt.Println("----------------------------")
+	n7 := &Node[int]{data: 7, next: &Node[int]{data: 7, next: &Node[int]{data: 7, next: &Node[int]{data: 7}}}}
+	n7.displayNodeData()
+	fmt.Println("Deleting 7 from list")
+	n7 = n7.deleteElementAllCase(7)
+	n7.displayNodeData()
+
+	n8 := &Node[int]{data: 1, next: &Node[int]{data: 2, next: &Node[int]{data: 2, next: &Node[int]{data: 1}}}}
+	n8.displayNodeData()
+	fmt.Println("Deleting 2 from list")
+	n8 = n8.deleteElementAllCase(2)
+	n8.displayNodeData()
 }

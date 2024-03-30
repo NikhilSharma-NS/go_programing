@@ -12,6 +12,7 @@ import (
 	"Gorepo/go_programing/leet_code/palindrome_number"
 	"Gorepo/go_programing/leet_code/remove_duplicates_from_sorted_array"
 	"Gorepo/go_programing/leet_code/remove_element"
+	"Gorepo/go_programing/leet_code/remove_linked_list_elements"
 	"Gorepo/go_programing/leet_code/reverse_integer"
 	"Gorepo/go_programing/leet_code/threesum"
 	"fmt"
@@ -60,5 +61,8 @@ func main() {
 	fmt.Println("Input:[3,4,5,1,2]", check_if_array_is_sorted_and_rotated.Check_if_array_is_sorted_and_rotated([]int{3, 4, 5, 1, 2}))
 	fmt.Println("Input:[2,1,3,4]", check_if_array_is_sorted_and_rotated.Check_if_array_is_sorted_and_rotated([]int{2, 1, 3, 4}))
 	fmt.Println("Input:[1,2,3]", check_if_array_is_sorted_and_rotated.Check_if_array_is_sorted_and_rotated([]int{1, 2, 3}))
+
+	head := &remove_linked_list_elements.ListNode{Val: 1, Next: &remove_linked_list_elements.ListNode{Val: 2}}
+	fmt.Println(remove_linked_list_elements.RemoveElements(head, 1))
 
 }
