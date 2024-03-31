@@ -10,6 +10,7 @@ import (
 	"Gorepo/go_programing/leet_code/first_unique_character_in_a_string"
 	"Gorepo/go_programing/leet_code/longest_palindromic_substring"
 	"Gorepo/go_programing/leet_code/longest_substring_without_repeating_characters"
+	"Gorepo/go_programing/leet_code/maximum_subarray"
 	"Gorepo/go_programing/leet_code/merge_sorted_array"
 	"Gorepo/go_programing/leet_code/palindrome_number"
 	"Gorepo/go_programing/leet_code/remove_duplicates_from_sorted_array"
@@ -97,5 +98,9 @@ func main() {
 	fmt.Println("valid-parentheses:()", valid_parentheses.IsValid("()"))
 	fmt.Println("valid-parentheses:(]", valid_parentheses.IsValid("(]"))
 	fmt.Println("valid-parentheses:{[]}:", valid_parentheses.IsValid("{[]}"))
+
+	fmt.Println("maximum subarray of [-2, 1, -3, 4, -1, 2, 1, -5, 4]: ", maximum_subarray.MaxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}))
+
+	fmt.Println("maximum subarray of [1] : ", maximum_subarray.MaxSubArray([]int{1}))
 
 }
