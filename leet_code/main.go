@@ -18,6 +18,8 @@ import (
 	"Gorepo/go_programing/leet_code/reverse_integer"
 	"Gorepo/go_programing/leet_code/rotate_list"
 	"Gorepo/go_programing/leet_code/threesum"
+	"Gorepo/go_programing/leet_code/valid_anagram"
+	"Gorepo/go_programing/leet_code/valid_parentheses"
 	"fmt"
 )
 
@@ -89,5 +91,11 @@ func main() {
 	node3 := &rotate_list.ListNode{Val: 1, Next: &rotate_list.ListNode{Val: 2, Next: &rotate_list.ListNode{Val: 3, Next: &rotate_list.ListNode{Val: 4, Next: &rotate_list.ListNode{Val: 5}}}}}
 	node3 = rotate_list.RotateRight(node3, 2)
 	rotate_list.PrintData(node3)
+
+	fmt.Println("[aaa][bbb] is valid anagram or not: ", valid_anagram.IsAnagramBestSolution("aaa", "abb"))
+
+	fmt.Println("valid-parentheses:()", valid_parentheses.IsValid("()"))
+	fmt.Println("valid-parentheses:(]", valid_parentheses.IsValid("(]"))
+	fmt.Println("valid-parentheses:{[]}:", valid_parentheses.IsValid("{[]}"))
 
 }
