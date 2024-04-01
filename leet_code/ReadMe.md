@@ -23,5 +23,7 @@
 | 19 | [threesum](https://leetcode.com/problems/)      | [threesum](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/threesum)
 | 20 | [valid_anagram](https://leetcode.com/problems/)      | [valid_anagram](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/valid_anagram)
 | 21 | [valid_parentheses](https://leetcode.com/problems/)      | [valid_parentheses](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/valid_parentheses)
-
+| 22 | [product_of_array_except_self](https://leetcode.com/problems/product-of-array-except-self/)      | [product_of_array_except_self](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/product_of_array_except_self)
+| 23 | [length_of_last_word](https://leetcode.com/problems/length-of-last-word/)      | [length_of_last_word](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/length_of_last_word)
+| 24 | [merge-intervals](https://leetcode.com/problems/merge-intervals/)      | [merge-intervals](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/merge-intervals)
 

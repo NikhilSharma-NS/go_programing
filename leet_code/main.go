@@ -8,11 +8,14 @@ import (
 	"Gorepo/go_programing/leet_code/delete_node_in_a_linked_list"
 	"Gorepo/go_programing/leet_code/delete_the_middle_node_of_a_linked_list"
 	"Gorepo/go_programing/leet_code/first_unique_character_in_a_string"
+	"Gorepo/go_programing/leet_code/length_of_last_word"
 	"Gorepo/go_programing/leet_code/longest_palindromic_substring"
 	"Gorepo/go_programing/leet_code/longest_substring_without_repeating_characters"
 	"Gorepo/go_programing/leet_code/maximum_subarray"
+	"Gorepo/go_programing/leet_code/merge_intervals"
 	"Gorepo/go_programing/leet_code/merge_sorted_array"
 	"Gorepo/go_programing/leet_code/palindrome_number"
+	"Gorepo/go_programing/leet_code/product_of_array_except_self"
 	"Gorepo/go_programing/leet_code/remove_duplicates_from_sorted_array"
 	"Gorepo/go_programing/leet_code/remove_element"
 	"Gorepo/go_programing/leet_code/remove_linked_list_elements"
@@ -102,5 +105,15 @@ func main() {
 	fmt.Println("maximum subarray of [-2, 1, -3, 4, -1, 2, 1, -5, 4]: ", maximum_subarray.MaxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}))
 
 	fmt.Println("maximum subarray of [1] : ", maximum_subarray.MaxSubArray([]int{1}))
+
+	fmt.Println("product_of_array_except_self [1,2,3,4]::", product_of_array_except_self.ProductExceptSelf([]int{1, 2, 3, 4}))
+
+	fmt.Println("len of last word", length_of_last_word.LengthOfLastWord_Best("   fly me   to   the moon  "))
+	fmt.Println("len of last word", length_of_last_word.LengthOfLastWord_Best("Hello World"))
+	fmt.Println("len of last word", length_of_last_word.LengthOfLastWord_Best("a"))
+
+	vales := [][]int{{1, 3}, {8, 10}, {15, 18}, {2, 6}}
+
+	fmt.Println("merge_intervals{1, 3}, {8, 10}, {15, 18}, {2, 6} to ", merge_intervals.Merge(vales))
 
 }
