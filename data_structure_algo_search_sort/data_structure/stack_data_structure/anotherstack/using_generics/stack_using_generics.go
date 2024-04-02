@@ -2,7 +2,11 @@ package main
 
 import "fmt"
 
-type Stack[T any] struct {
+type T2 interface {
+	comparable
+}
+
+type Stack[T T2] struct {
 	Items []T
 }
 
