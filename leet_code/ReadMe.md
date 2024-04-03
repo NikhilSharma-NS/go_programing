@@ -165,7 +165,7 @@
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
 |
-| 9 | [longest_palindromic_substring](https://leetcode.com/problems/longest-palindromic-substring)      | [longest_palindromic_substring](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/longest_palindromic_substring)    |
+| 1 | [longest_palindromic_substring](https://leetcode.com/problems/longest-palindromic-substring)      | [longest_palindromic_substring](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/longest_palindromic_substring)    |
     
 24.  Other
 
