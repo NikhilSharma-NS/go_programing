@@ -8,6 +8,7 @@ import (
 	"Gorepo/go_programing/leet_code/delete_node_in_a_linked_list"
 	"Gorepo/go_programing/leet_code/delete_the_middle_node_of_a_linked_list"
 	"Gorepo/go_programing/leet_code/first_unique_character_in_a_string"
+	"Gorepo/go_programing/leet_code/group_anagrams"
 	"Gorepo/go_programing/leet_code/length_of_last_word"
 	"Gorepo/go_programing/leet_code/longest_palindromic_substring"
 	"Gorepo/go_programing/leet_code/longest_substring_without_repeating_characters"
@@ -115,5 +116,9 @@ func main() {
 	vales := [][]int{{1, 3}, {8, 10}, {15, 18}, {2, 6}}
 
 	fmt.Println("merge_intervals{1, 3}, {8, 10}, {15, 18}, {2, 6} to ", merge_intervals.Merge(vales))
+
+	s := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
+	v := group_anagrams.GroupAnagrams(s)
+	fmt.Println("Group of anagram", v)
 
 }
