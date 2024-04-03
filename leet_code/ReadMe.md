@@ -34,13 +34,11 @@
    
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 
 5. Hashmap
 
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 | 1 | [valid_anagram](https://leetcode.com/problems/valid-anagram)      | [valid_anagram](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/valid_anagram)      |
 | 2 | [group_anagrams](https://leetcode.com/problems/group-anagrams/)      | [merge-intervals](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/merge_intervals)     |
 | 3 | [two_sum](https://leetcode.com/problems/two-sum/)      | [two_sum](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/two_sum)     |
@@ -50,21 +48,18 @@
 
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 | 1 | [merge_intervals](https://leetcode.com/problems/merge-intervals/)      | [merge_intervals](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/merge_intervals)     |
 
 7. Stack
 
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|   
 | 1 | [valid_parentheses](https://leetcode.com/problems/valid-parentheses)      | [valid_parentheses](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/valid_parentheses)    |
 
 8. Linked List
 
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 | 1 | [add_two_numbers](https://leetcode.com/problems/add-two-numbers/)      | [add_two_numbers](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/add_two_numbers)     |
 | 2 | [rotate_list](https://leetcode.com/problems/rotate-list)      | [rotate_list](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/rotate_list)     |
 | 3 | [delete-node-in-a-linked-list](https://leetcode.com/problems/delete-node-in-a-linked-list)      | [delete_node_in_a_linked_list](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/delete_node_in_a_linked_list)   |
@@ -76,81 +71,68 @@
    
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 
 10.  Binary Tree BFS
    
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 
 11.  Binary Search Tree
    
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 
 12.  Graph General
    
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 
 13.  Graph BFS
     
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 
 14.  Trie
     
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 
 15.  Backtracking
     
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 | 1 | [generate_parentheses](https://leetcode.com/problems/generate-parentheses/)      | [generate_parentheses](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/generate-parentheses)     |
 
 16.  Divide & Conquer
     
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 
 17.  Kadane's Algorithm
     
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 | 1 | [maximum_subarray](https://leetcode.com/problems/maximum-subarray)      | [maximum_subarray](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/maximum_subarray)     |
 
 18.  Binary Search
     
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 
 19.  Heap
     
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 
 20.  Bit Manipulation
     
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 
 21.  Math
   
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 | 1 | [reverse_integer](https://leetcode.com/problems/reverse-integer)      | [reverse_integer](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/reverse_integer)     |
 | 2 | [palindrome_number](https://leetcode.com/problems/palindrome-number)      | [palindrome_number](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/palindrome_number)     |
 
@@ -158,20 +140,17 @@
     
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 
 23.  Multidimensional DP
     
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 | 1 | [longest_palindromic_substring](https://leetcode.com/problems/longest-palindromic-substring)      | [longest_palindromic_substring](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/longest_palindromic_substring)    |
     
 24.  Other
 
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-|
 
 
 
