@@ -27,4 +27,5 @@
 | 23 | [length_of_last_word](https://leetcode.com/problems/length-of-last-word/)      | [length_of_last_word](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/length_of_last_word)
 | 24 | [merge_intervals](https://leetcode.com/problems/merge-intervals/)      | [merge_intervals](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/merge_intervals)
 | 25 | [group_anagrams](https://leetcode.com/problems/group-anagrams/)      | [merge-intervals](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/merge_intervals)
+| 26 | [generate_parentheses](https://leetcode.com/problems/generate-parentheses/)      | [generate_parentheses](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/generate-parentheses)
 
