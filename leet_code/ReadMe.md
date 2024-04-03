@@ -67,7 +67,7 @@
 |
 | 1 | [add_two_numbers](https://leetcode.com/problems/add-two-numbers/)      | [add_two_numbers](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/add_two_numbers)     |
 | 2 | [rotate_list](https://leetcode.com/problems/rotate-list)      | [rotate_list](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/rotate_list)     |
-| 3 | [delete-node-in-a-linked-list](https://leetcode.com/problems/delete-node-in-a-linked-list)      | [delete_node_in_a_linked_list](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/delete_node_in_a_linked_list)
+| 3 | [delete-node-in-a-linked-list](https://leetcode.com/problems/delete-node-in-a-linked-list)      | [delete_node_in_a_linked_list](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/delete_node_in_a_linked_list)   |
 | 4 | [delete_the_middle_node_of_a_linked_list](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)      | [delete_the_middle_node_of_a_linked_listd](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/delete_the_middle_node_of_a_linked_list)    |
 | 5 | [remove_linked_list_elements](https://leetcode.com/problems/remove-linked-list-elements)      | [remove_linked_list_elements](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/remove_linked_list_elements)   |
 
@@ -172,9 +172,6 @@
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
 |
-
-
-
 
 
 
