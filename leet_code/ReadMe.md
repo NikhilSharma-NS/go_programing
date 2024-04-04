@@ -15,6 +15,8 @@
 | 8 | [check-if-array-is-sorted-and-rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/)      | [check_if_array_is_sorted_and_rotated](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/check_if_array_is_sorted_and_rotated)       |
 | 9 | [first_unique_character_in_a_string](https://leetcode.com/problems/first-unique-character-in-a-string)      | [first_unique_character_in_a_string](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/first_unique_character_in_a_string)     | 
 | 10 | [remove_duplicates_from_sorted_array_ii](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)      | [remove_duplicates_from_sorted_array_ii](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/remove_duplicates_from_sorted_array_ii)     |
+| 11 | [majority_element](https://leetcode.com/problems/majority-element)      | [majority_element](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/majority_element)     |
+| 12 | [majority_element_ii](https://leetcode.com/problems/majority-element-ii)      | [majority_element_ii](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/majority_element_ii)     |
 
 
 2. Two Pointers

@@ -14,6 +14,8 @@ import (
 	"Gorepo/go_programing/leet_code/length_of_last_word"
 	"Gorepo/go_programing/leet_code/longest_palindromic_substring"
 	"Gorepo/go_programing/leet_code/longest_substring_without_repeating_characters"
+	"Gorepo/go_programing/leet_code/majority_element"
+	"Gorepo/go_programing/leet_code/majority_element_ii"
 	"Gorepo/go_programing/leet_code/maximum_subarray"
 	"Gorepo/go_programing/leet_code/merge_intervals"
 	"Gorepo/go_programing/leet_code/merge_sorted_array"
@@ -149,5 +151,12 @@ func main() {
 	li := add_two_numbers.AddTwoNumbers(&listNode1, &listNode2)
 	fmt.Println("Sum link list")
 	li.PrintData()
+
+	majorityElement := majority_element.MajorityElement([]int{6, 5, 5})
+	fmt.Println(majorityElement)
+
+	majority_Elements := majority_element_ii.MajorityElements([]int{1, 2})
+
+	fmt.Println(majority_Elements)
 
 }
