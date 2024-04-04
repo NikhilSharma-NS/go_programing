@@ -13,14 +13,15 @@
 | 6 | [length_of_last_word](https://leetcode.com/problems/length-of-last-word/)      | [length_of_last_word](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/length_of_last_word)       |
 | 7 | [sort-an-array](https://leetcode.com/problems/sort-an-array/)      | [sort-an-array](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/sort-an-array)       |
 | 8 | [check-if-array-is-sorted-and-rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/)      | [check_if_array_is_sorted_and_rotated](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/check_if_array_is_sorted_and_rotated)       |
-| 9 | [first_unique_character_in_a_string](https://leetcode.com/problems/)      | [check_if_array_is_sorted_and_rotated](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/first_unique_character_in_a_string)     | 
+| 9 | [first_unique_character_in_a_string](https://leetcode.com/problems/first-unique-character-in-a-string)      | [first_unique_character_in_a_string](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/first_unique_character_in_a_string)     | 
+| 10 | [remove_duplicates_from_sorted_array_ii](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)      | [remove_duplicates_from_sorted_array_ii](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/remove_duplicates_from_sorted_array_ii)     |
 
 
 2. Two Pointers
    
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
-| 1 | [container_with_most_water](https://leetcode.com/container-with-most-water)      | [container_with_most_water](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/container_with_most_water)      |
+| 1 | [container_with_most_water](https://leetcode.com/problems/container-with-most-water)      | [container_with_most_water](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/container_with_most_water)      |
 | 2 | [threesum](https://leetcode.com/problems/3sum)      | [threesum](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/threesum)     |
 
 3. Sliding Window

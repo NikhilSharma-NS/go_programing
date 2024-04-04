@@ -1,6 +1,7 @@
 package main
 
 import (
+	"Gorepo/go_programing/leet_code/add_two_numbers"
 	"Gorepo/go_programing/leet_code/best_time_to_buy_and_sell_stock"
 	"Gorepo/go_programing/leet_code/check_if_array_is_sorted_and_rotated"
 	"Gorepo/go_programing/leet_code/container_with_most_water"
@@ -19,11 +20,13 @@ import (
 	"Gorepo/go_programing/leet_code/palindrome_number"
 	"Gorepo/go_programing/leet_code/product_of_array_except_self"
 	"Gorepo/go_programing/leet_code/remove_duplicates_from_sorted_array"
+	"Gorepo/go_programing/leet_code/remove_duplicates_from_sorted_array_ii"
 	"Gorepo/go_programing/leet_code/remove_element"
 	"Gorepo/go_programing/leet_code/remove_linked_list_elements"
 	"Gorepo/go_programing/leet_code/reverse_integer"
 	"Gorepo/go_programing/leet_code/rotate_list"
 	"Gorepo/go_programing/leet_code/threesum"
+	"Gorepo/go_programing/leet_code/two_sum"
 	"Gorepo/go_programing/leet_code/valid_anagram"
 	"Gorepo/go_programing/leet_code/valid_parentheses"
 	"fmt"
@@ -127,5 +130,24 @@ func main() {
 
 	gen1 := generate_parentheses.GenerateParenthesis(1)
 	fmt.Println("GenerateParenthesis", gen1)
+
+	arr_removeDuplicates := []int{1, 1, 2, 2, 2, 3, 6, 7, 8, 9, 9, 9, 9, 9, 9}
+
+	left := remove_duplicates_from_sorted_array_ii.RemoveDuplicates(arr_removeDuplicates)
+	fmt.Println()
+	for i := 0; i < left; i++ {
+		fmt.Printf("[%v]", arr_removeDuplicates[i])
+	}
+
+	two_sum := two_sum.TwoSum([]int{1, 2, 3, 4, 5, 6}, 10)
+
+	fmt.Println("Two Sum of [1, 2, 3, 4, 5, 6],10", two_sum)
+
+	listNode1 := add_two_numbers.ListNode{Val: 1, Next: &add_two_numbers.ListNode{Val: 2}}
+	listNode2 := add_two_numbers.ListNode{Val: 2, Next: &add_two_numbers.ListNode{Val: 4}}
+
+	li := add_two_numbers.AddTwoNumbers(&listNode1, &listNode2)
+	fmt.Println("Sum link list")
+	li.PrintData()
 
 }
