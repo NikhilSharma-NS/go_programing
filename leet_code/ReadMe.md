@@ -11,7 +11,7 @@
 | 4 | [best-time-to-buy-and-sell-stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)      | [best_time_to_buy_and_sell_stock](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/best_time_to_buy_and_sell_stock)       |
 | 5 | [product_of_array_except_self](https://leetcode.com/problems/product-of-array-except-self/)      | [product_of_array_except_self](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/product_of_array_except_self)       |
 | 6 | [length_of_last_word](https://leetcode.com/problems/length-of-last-word/)      | [length_of_last_word](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/length_of_last_word)       |
-| 7 | [sort-an-array](https://leetcode.com/problems/sort-an-array/)      | [sort-an-array](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/sort-an-array)       |
+| 7 | [sort_an_array](https://leetcode.com/problems/sort-an-array/)      | [sort_an_array](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/sort_an_array)       |
 | 8 | [check-if-array-is-sorted-and-rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/)      | [check_if_array_is_sorted_and_rotated](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/check_if_array_is_sorted_and_rotated)       |
 | 9 | [first_unique_character_in_a_string](https://leetcode.com/problems/first-unique-character-in-a-string)      | [first_unique_character_in_a_string](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/first_unique_character_in_a_string)     | 
 | 10 | [remove_duplicates_from_sorted_array_ii](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)      | [remove_duplicates_from_sorted_array_ii](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/remove_duplicates_from_sorted_array_ii)     |
@@ -25,6 +25,7 @@
 |--------------|-----------|------------|
 | 1 | [container_with_most_water](https://leetcode.com/problems/container-with-most-water)      | [container_with_most_water](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/container_with_most_water)      |
 | 2 | [threesum](https://leetcode.com/problems/3sum)      | [threesum](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/threesum)     |
+| 3 | [valid_palindrome](https://leetcode.com/problems/valid-palindrome)      | [valid_palindrome](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/valid_palindrome)     |
 
 3. Sliding Window
 
@@ -43,7 +44,7 @@
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|
 | 1 | [valid_anagram](https://leetcode.com/problems/valid-anagram)      | [valid_anagram](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/valid_anagram)      |
-| 2 | [group_anagrams](https://leetcode.com/problems/group-anagrams/)      | [merge-intervals](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/merge_intervals)     |
+| 2 | [group_anagrams](https://leetcode.com/problems/group-anagrams)      | [merge-intervals](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/group_anagrams)     |
 | 3 | [two_sum](https://leetcode.com/problems/two-sum/)      | [two_sum](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/two_sum)     |
 | 4 | [contains_duplicate](https://leetcode.com/problems/contains-duplicate/)      | [contains_duplicate](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/contains_duplicate)     |
 

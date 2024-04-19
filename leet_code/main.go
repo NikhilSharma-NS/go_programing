@@ -30,6 +30,7 @@ import (
 	"Gorepo/go_programing/leet_code/threesum"
 	"Gorepo/go_programing/leet_code/two_sum"
 	"Gorepo/go_programing/leet_code/valid_anagram"
+	"Gorepo/go_programing/leet_code/valid_palindrome"
 	"Gorepo/go_programing/leet_code/valid_parentheses"
 	"fmt"
 )
@@ -158,5 +159,8 @@ func main() {
 	majority_Elements := majority_element_ii.MajorityElements([]int{1, 2})
 
 	fmt.Println(majority_Elements)
+	fmt.Println("valid_palindrome or not:", valid_palindrome.IsPalindrome("A man, a plan, a canal: Panama"))
+
+	fmt.Println("valid_palindrome or not:", valid_palindrome.IsPalindromeOptimal("race a car"))
 
 }
