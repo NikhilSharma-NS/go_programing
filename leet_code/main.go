@@ -3,6 +3,7 @@ package main
 import (
 	"Gorepo/go_programing/leet_code/add_two_numbers"
 	"Gorepo/go_programing/leet_code/best_time_to_buy_and_sell_stock"
+	"Gorepo/go_programing/leet_code/best_time_to_buy_and_sell_stock_ii"
 	"Gorepo/go_programing/leet_code/check_if_array_is_sorted_and_rotated"
 	"Gorepo/go_programing/leet_code/container_with_most_water"
 	"Gorepo/go_programing/leet_code/contains_duplicate"
@@ -11,6 +12,7 @@ import (
 	"Gorepo/go_programing/leet_code/first_unique_character_in_a_string"
 	"Gorepo/go_programing/leet_code/generate_parentheses"
 	"Gorepo/go_programing/leet_code/group_anagrams"
+	"Gorepo/go_programing/leet_code/jump_game"
 	"Gorepo/go_programing/leet_code/length_of_last_word"
 	"Gorepo/go_programing/leet_code/longest_palindromic_substring"
 	"Gorepo/go_programing/leet_code/longest_substring_without_repeating_characters"
@@ -26,6 +28,7 @@ import (
 	"Gorepo/go_programing/leet_code/remove_element"
 	"Gorepo/go_programing/leet_code/remove_linked_list_elements"
 	"Gorepo/go_programing/leet_code/reverse_integer"
+	"Gorepo/go_programing/leet_code/rotate_array"
 	"Gorepo/go_programing/leet_code/rotate_list"
 	"Gorepo/go_programing/leet_code/threesum"
 	"Gorepo/go_programing/leet_code/two_sum"
@@ -163,4 +166,10 @@ func main() {
 
 	fmt.Println("valid_palindrome or not:", valid_palindrome.IsPalindromeOptimal("race a car"))
 
+	fmt.Println("can jump{2,3,1,1,4}", jump_game.CanJump([]int{2, 3, 1, 1, 4}))
+
+	fmt.Println("best_time_to_buy_and_sell_stock_ii:", best_time_to_buy_and_sell_stock_ii.MaxProfit([]int{7, 1, 5, 3, 6, 4}))
+
+	fmt.Println("rotatte Array")
+	rotate_array.Rotate([]int{1, 2, 3, 4, 5, 6, 7}))
 }

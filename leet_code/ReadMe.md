@@ -17,6 +17,10 @@
 | 10 | [remove_duplicates_from_sorted_array_ii](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)      | [remove_duplicates_from_sorted_array_ii](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/remove_duplicates_from_sorted_array_ii)     |
 | 11 | [majority_element](https://leetcode.com/problems/majority-element)      | [majority_element](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/majority_element)     |
 | 12 | [majority_element_ii](https://leetcode.com/problems/majority-element-ii)      | [majority_element_ii](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/majority_element_ii)     |
+| 13 | [jump_game](https://leetcode.com/problems/jump-game)      | [jump_game](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/jump_game)     |
+| 14 | [best_time_to_buy_and_sell_stock_ii](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)      | [best_time_to_buy_and_sell_stock_ii](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/best_time_to_buy_and_sell_stock_ii)     |
+| 15 | [rotate_array](https://leetcode.com/problems/rotate-array)      | [rotate_array](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/rotate_array)     |
+| 16 | [find_the_index_of_the_first_occurrence_in_a_string](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string)      | [find_the_index_of_the_first_occurrence_in_a_string](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/find_the_index_of_the_first_occurrence_in_a_string)     |
 
 
 2. Two Pointers
