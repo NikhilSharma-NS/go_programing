@@ -9,6 +9,7 @@ import (
 	"Gorepo/go_programing/leet_code/contains_duplicate"
 	"Gorepo/go_programing/leet_code/delete_node_in_a_linked_list"
 	"Gorepo/go_programing/leet_code/delete_the_middle_node_of_a_linked_list"
+	"Gorepo/go_programing/leet_code/find_the_index_of_the_first_occurrence_in_a_string"
 	"Gorepo/go_programing/leet_code/first_unique_character_in_a_string"
 	"Gorepo/go_programing/leet_code/generate_parentheses"
 	"Gorepo/go_programing/leet_code/group_anagrams"
@@ -171,5 +172,9 @@ func main() {
 	fmt.Println("best_time_to_buy_and_sell_stock_ii:", best_time_to_buy_and_sell_stock_ii.MaxProfit([]int{7, 1, 5, 3, 6, 4}))
 
 	fmt.Println("rotatte Array")
-	rotate_array.Rotate([]int{1, 2, 3, 4, 5, 6, 7}))
+	rotate_array.Rotate([]int{1, 2, 3, 4, 5, 6, 7}, 2)
+
+	fmt.Println("find_the_index_of_the_first_occurrence_in_a_string{mississippi, issip}", find_the_index_of_the_first_occurrence_in_a_string.StrStr("mississippi", "issip"))
+	fmt.Println("find_the_index_of_the_first_occurrence_in_a_string{hello, ll}", find_the_index_of_the_first_occurrence_in_a_string.StrStr("hello", "ll"))
+
 }
