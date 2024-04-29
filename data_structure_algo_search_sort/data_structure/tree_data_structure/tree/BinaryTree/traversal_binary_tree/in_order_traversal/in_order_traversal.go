@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-type Node[T any] struct {
+type TreeNode[T any] struct {
 	data  T
-	left  *Node[T]
-	right *Node[T]
+	left  *TreeNode[T]
+	right *TreeNode[T]
 }
 
-func (root *Node[T]) InOrderTraversal() {
+func (root *TreeNode[T]) InOrderTraversal() {
 
 	if root == nil {
 		return
@@ -20,17 +20,17 @@ func (root *Node[T]) InOrderTraversal() {
 }
 
 func main() {
-	root := Node[int]{data: 1}
+	root := TreeNode[int]{data: 1}
 
-	left := &Node[int]{data: 2}
-	left_left := &Node[int]{data: 4}
-	left_right := &Node[int]{data: 5}
+	left := &TreeNode[int]{data: 2}
+	left_left := &TreeNode[int]{data: 4}
+	left_right := &TreeNode[int]{data: 5}
 	left.left = left_left
 	left.right = left_right
 
-	right := &Node[int]{data: 3}
-	right_left := &Node[int]{data: 6}
-	right_right := &Node[int]{data: 7}
+	right := &TreeNode[int]{data: 3}
+	right_left := &TreeNode[int]{data: 6}
+	right_right := &TreeNode[int]{data: 7}
 	right.left = right_left
 	right.right = right_right
 
