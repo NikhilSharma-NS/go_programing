@@ -22,14 +22,9 @@ func (node *TreeNode[T]) LevelOrderTraversal() {
 	}
 
 	queue.Enqueue(node)
-	queue.Enqueue(nil)
 
-	for len(queue.List) > 1 {
+	for len(queue.List) > 0 {
 		currentNode := queue.Dequeue()
-		if currentNode == nil {
-			queue.Enqueue(nil)
-			continue
-		}
 		levelorder = append(levelorder, currentNode.data)
 		if currentNode.left != nil {
 			queue.Enqueue(currentNode.left)
@@ -80,5 +75,24 @@ func main() {
 	root.right = right
 
 	root.LevelOrderTraversal()
+
+	roots := TreeNode[string]{data: "data"}
+
+	lefts := &TreeNode[string]{data: "papa"}
+	left_lefts := &TreeNode[string]{data: "papa_son1"}
+	left_rights := &TreeNode[string]{data: "papa_son2"}
+	lefts.left = left_lefts
+	lefts.right = left_rights
+
+	rights := &TreeNode[string]{data: "uncle"}
+	right_lefts := &TreeNode[string]{data: "uncle_son1"}
+	right_rights := &TreeNode[string]{data: "uncle_son2"}
+	rights.left = right_lefts
+	rights.right = right_rights
+
+	roots.left = lefts
+	roots.right = rights
+
+	roots.LevelOrderTraversal()
 
 }
