@@ -1,4 +1,4 @@
-##### Leet Code
+##### Leet Code(https://leetcode.com/studyplan/top-interview-150/)
 
 
 1. Array/String
@@ -21,9 +21,10 @@
 | 14 | [best_time_to_buy_and_sell_stock_ii](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)      | [best_time_to_buy_and_sell_stock_ii](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/best_time_to_buy_and_sell_stock_ii)     |
 | 15 | [rotate_array](https://leetcode.com/problems/rotate-array)      | [rotate_array](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/rotate_array)     |
 | 16 | [find_the_index_of_the_first_occurrence_in_a_string](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string)      | [find_the_index_of_the_first_occurrence_in_a_string](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/find_the_index_of_the_first_occurrence_in_a_string)     |
+| 17 | [largest_number](https://leetcode.com/problems/largest-number/)      | [largest_numberg](https://github.com/NikhilSharma-NS/go_programing/tree/master/leet_code/largest_number)     |
 
 
-2. Two Pointers
+1. Two Pointers
    
 | S.No         | LeetCode Link     | Problem Solution |
 |--------------|-----------|------------|

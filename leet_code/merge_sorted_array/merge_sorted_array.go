@@ -70,3 +70,45 @@ func Merge_sorted_array_without_using_another_array(nums1 []int, m int, nums2 []
 	return nums1
 
 }
+
+func Merge_sorted_array_without_using_another_array_practise(nums1 []int, m int, nums2 []int, n int) {
+	final := make([]int, m+n)
+	counter := 0
+	var final_m, final_n int
+	for i, j := 0, 0; i < m && j < n; {
+		if nums1[i] > nums2[j] {
+			final[counter] = nums2[j]
+			counter = counter + 1
+			j = j + 1
+		} else if nums1[i] < nums2[j] {
+			final[counter] = nums1[i]
+			counter = counter + 1
+			i = i + 1
+		} else {
+			final[counter] = nums2[j]
+			j = j + 1
+			counter = counter + 1
+			final[counter] = nums1[i]
+			i = i + 1
+			counter = counter + 1
+		}
+		final_m = i
+		final_n = j
+	}
+
+	if final_m != m {
+		for i := final_m; i < m; i++ {
+			final[counter] = nums1[i]
+			counter = counter + 1
+		}
+	} else {
+		for i := final_n; i < n; i++ {
+			final[counter] = nums2[i]
+			counter = counter + 1
+		}
+	}
+	for i := 0; i < m+n; i++ {
+		nums1[i] = final[i]
+	}
+
+}
